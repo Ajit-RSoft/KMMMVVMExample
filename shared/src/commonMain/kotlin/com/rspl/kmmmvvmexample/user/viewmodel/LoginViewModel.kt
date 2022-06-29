@@ -29,8 +29,8 @@ class LoginViewModel(val userRepository: UserRepository) : ViewModel() {
             _userLoginResource.postValue(Resource.loading(null))
             _userLoginResource.value =
                 userRepository.login(
-                    username = "ajit.jaiswal@rishabhsoft.com",
-                    password = "Aj_jswl@05081992"
+                    username = "",
+                    password = ""
                 )
 
             if (_userLoginResource.value.status == Status.SUCCESS) {
